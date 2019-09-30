@@ -18,6 +18,7 @@ require "action_cable/engine"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+Dotenv::Railtie.load #quicker initialization of dotenv gem, NOT NECESSARY BUT PRECAUTION
 
 module TodosApi
   class Application < Rails::Application
