@@ -10,3 +10,5 @@ RSpec.describe Todo, type: :model do
   it { should validate_presence_of(:title) }
   it { should validate_presence_of(:created_by) }
 end
+
+# shoulda gem: provides RSpec with the nifty association and validation matchers above
