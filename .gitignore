@@ -1,3 +1,6 @@
+.vscode
+
+## below is template
 *.rbc
 capybara-*.html
 .rspec
