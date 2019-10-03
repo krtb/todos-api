@@ -1,6 +1,5 @@
 # not writing controller specs, writing REQUEST SPECS INSTEAD
 require 'rails_helper'
-
 RSpec.describe 'Items API' do
   # Initialize the test data
   let!(:todo) { create(:todo) }
