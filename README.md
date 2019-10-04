@@ -16,3 +16,19 @@ NOTES
 * [shoulda_matchers](https://github.com/thoughtbot/shoulda-matchers) - Provides RSpec with additional matchers.
 * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) - You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
 * [faker](https://github.com/stympy/faker) - A library for generating fake data. We'll use this to generate test data.
+
+### API will expose the following endpoints
+
+| Endpoint      | Functionality |
+| ------------- |:-------------:|
+| POST/ signup  | Signup        |
+| POST /auth/login | Login      |
+| GET /auth/logout| Logout   |
+| GET /todos | List all todos   |
+| POST /todos | Create a new todo |
+| GET /todos/:id | Get a todo  |
+| PUT /todos/:id | Update a todo   |
+| DELETE /todos/:id | Delete a todo and its items   |
+| GET /todos/:id/items | Get a todo item   |
+| PUT /todos/:id/items | Update a todo item   |
+| DELETE /todos/:id/items | Delete a todo item   |
