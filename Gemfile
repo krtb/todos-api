@@ -34,6 +34,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # adding rspec testing framework
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2' 
+  # Use ActiveModel, has_secure_password
+  gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 end
 
 group :development do
