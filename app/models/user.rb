@@ -9,3 +9,7 @@ class User < ApplicationRecord
 end
 
 # defines a 1:many relationship
+# adds field validations
+# method (has_secure_password), this adds methods to authenticate against bcrypt password
+# above method will require us to have a (password_digest)
+# thus also need bcrypt as dependency
