@@ -48,3 +48,10 @@ NOTES
 
 * [Vendor Tree](https://en.wikipedia.org/wiki/Media_type#Vendor_tree)
   * can define own [media types](https://tools.ietf.org/html/rfc6838#section-3.2) using vendor tree specification 
+
+* `Serializers`
+  * allow for custom representation of JSON responses
+  * [active model serializers](https://github.com/rails-api/active_model_serializers)
+    * make it easy to define which model attributes and relationships need to be serialized
+  * In order to get todos with their respective items
+    * we need to define serializers on the Todo model to include its attributes and relationships.
