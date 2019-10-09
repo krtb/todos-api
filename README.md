@@ -40,3 +40,8 @@ NOTES
 - [Advanced Contraints Supported by Rails routing](https://guides.rubyonrails.org/routing.html#advanced-constraints)
   - provided an object responds to `matches?`
   - can control which controller handles a specific route
+
+* [Content Negotiation](https://en.wikipedia.org/wiki/Content_negotiation)
+  * REST closely tied to the HTTP specification
+  * HTTP defined mechanisms, that make it possible to server different versions(represenations) of a resource
+    * at the same URI
