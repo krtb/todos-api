@@ -42,6 +42,8 @@ group :development, :test do
   gem 'bcrypt', '~> 3.1', '>= 3.1.11'
   # Manage JSON Web tokens
   gem 'jwt', '~> 2.2', '>= 2.2.1'
+  # create fake data
+  gem 'faker', '~> 2.5'
 end
 
 group :development do
@@ -54,7 +56,6 @@ end
 group :test do
   gem 'factory_bot_rails', '~> 5.1'
   gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
-  gem 'faker', '~> 2.5'
   gem 'database_cleaner', '~> 1.7'
 end
 
