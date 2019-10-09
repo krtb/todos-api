@@ -1,1 +1,1 @@
-# respoble for authorizing all api requests, making sure requests have valid token/user payload
+# responsible for authorizing all api requests, making sure requests have valid token/user payload
