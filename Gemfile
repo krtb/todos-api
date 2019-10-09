@@ -36,6 +36,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8', '>= 3.8.2' 
   # Use ActiveModel, has_secure_password
   gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+  # Manage JSON Web tokens
+  gem 'jwt'
 end
 
 group :development do
