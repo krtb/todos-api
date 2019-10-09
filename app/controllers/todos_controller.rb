@@ -3,7 +3,8 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
-    @todos = Todo.all
+    # get current user todos
+    @todos = current_user.todos
     json_response(@todos)
   end
 
