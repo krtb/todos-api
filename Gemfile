@@ -37,7 +37,7 @@ group :development, :test do
   # Use ActiveModel, has_secure_password
   gem 'bcrypt', '~> 3.1', '>= 3.1.11'
   # Manage JSON Web tokens
-  gem 'jwt'
+  gem 'jwt', '~> 2.2', '>= 2.2.1'
 end
 
 group :development do
