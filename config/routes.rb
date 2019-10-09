@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     resources :items
   end
   post 'auth/login', to: 'authentication#authenticate' #routing for authentication
+  post 'signup', to: 'users#create' # routing to signup
 end
