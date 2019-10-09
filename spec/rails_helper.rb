@@ -51,9 +51,6 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
-  # FOR RSPEC HELPER
-  config.include RequestSpecHelper, type: :request
-
   # add `FactoryBot` methods
   config.include FactoryBot::Syntax::Methods
 
@@ -72,6 +69,11 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
+      # FOR RSPEC HELPER
+  # previously `config.include RequestSpecHelper, type: :request`
+  config.include RequestSpecHelper
+  config.include ControllerSpecHelper
+
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
@@ -89,5 +91,6 @@ RSpec.configure do |config|
       example.run
     end
   end
+
   
 end
