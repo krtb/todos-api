@@ -30,3 +30,7 @@ RSpec.describe AuthenticateUser do
     end
   end
 end
+
+# authenticate user services: has an entry point, (#call)
+# should return a token, when user credentials are valid
+# AND raise an error when they're not
