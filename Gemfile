@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
+#to define which model attributes and relationships need to be serialized
+gem 'active_model_serializers', '~> 0.10.10'
 # add DOTENV gem, for hiding keys and sensitive info in .env file
 gem 'dotenv-rails', groups: [:development, :test] # having it this way in test and dev envs works
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
