@@ -45,3 +45,6 @@ NOTES
   * REST closely tied to the HTTP specification
   * HTTP defined mechanisms, that make it possible to server different versions(represenations) of a resource
     * at the same URI
+
+* [Vendor Tree](https://en.wikipedia.org/wiki/Media_type#Vendor_tree)
+  * can define own [media types](https://tools.ietf.org/html/rfc6838#section-3.2) using vendor tree specification 

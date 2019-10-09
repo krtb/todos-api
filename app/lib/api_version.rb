@@ -19,11 +19,15 @@ class ApiVersion
   def check_headers(headers)
     # check version from Accept headers; expect custom media type `todos`
     accept = headers[:accept] # from request object, can access the Accept headers
-    accept && accept.include?("application/vnd.todos.#{version}+json") # check for the requested version or if default version
+    accept && accept.include?("application/vnd.todos.#{version}+json") # vendor tree
+    # check for the requested version or if default version
   end
 end
 
 # class implements (server-driven) content negotiation
 # where client (user agent) informs the server media types it understands by providing 
 # an (AcceptHTTP header)
+
+# vendor tree used for media types for publicly available products
+# uses (vnd) facet
 
