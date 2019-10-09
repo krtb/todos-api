@@ -32,3 +32,7 @@ NOTES
 | GET /todos/:id/items | Get a todo item   |
 | PUT /todos/:id/items | Update a todo item   |
 | DELETE /todos/:id/items | Delete a todo item   |
+
+### Versioning API
+1) add route contstraint: will select version based on request headers
+2) `Namespace` the controllers: have diff contrller namespaces to handle different versions
