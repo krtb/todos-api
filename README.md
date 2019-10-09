@@ -36,3 +36,5 @@ NOTES
 ### Versioning API
 1) add route contstraint: will select version based on request headers
 2) `Namespace` the controllers: have diff contrller namespaces to handle different versions
+
+- [Advanced Contraints Supported by Rails routing](https://guides.rubyonrails.org/routing.html#advanced-constraints)
