@@ -38,3 +38,5 @@ NOTES
 2) `Namespace` the controllers: have diff contrller namespaces to handle different versions
 
 - [Advanced Contraints Supported by Rails routing](https://guides.rubyonrails.org/routing.html#advanced-constraints)
+  - provided an object responds to `matches?`
+  - can control which controller handles a specific route
