@@ -4,9 +4,9 @@ module V1
 
     # GET /todos
     def index
-      # get current user todos
-      @todos = current_user.todos
-      json_response(@todos)
+    # get paginated current user todos
+    @todos = current_user.todos.paginate(page: params[:page], per_page: 20)
+    json_response(@todos)
     end
 
     # POST /todos
@@ -45,3 +45,6 @@ module V1
     end
   end
 end # end of defining controllers in v1 namespace
+
+# index method: checks for page number in request params
+# IF provided, returns page data, with each page having twenty records each
