@@ -23,3 +23,7 @@ class ApiVersion
   end
 end
 
+# class implements (server-driven) content negotiation
+# where client (user agent) informs the server media types it understands by providing 
+# an (AcceptHTTP header)
+
