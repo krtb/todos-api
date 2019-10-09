@@ -9,7 +9,8 @@ class TodosController < ApplicationController
 
   # POST /todos
   def create
-    @todo = Todo.create!(todo_params) #by using (create!), model will raise an exception
+    # create todos belonging to current user
+    @todo = current_user.todos.create!(todo_params)#by using (create!), model will raise an exception
     json_response(@todo, :created)
   end
 
