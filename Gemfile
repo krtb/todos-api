@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.4'
 
+# provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel
+gem 'will_paginate', '~> 3.2'
 #to define which model attributes and relationships need to be serialized
 gem 'active_model_serializers', '~> 0.10.10'
 # add DOTENV gem, for hiding keys and sensitive info in .env file
